@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">							<!-- Information destinée aux moteurs de recherche : langue du site -->
+    <head>
+        <meta charset="utf-8" />			<!-- Information destinée aux navigateurs : encodage -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 	<!-- Information destinée aux navigateur : taille écran appareil -->
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />	<!-- Import de la feuille de style jQuery Mobile depuis un CDN -->
+        <link rel="stylesheet" href="style.css" />						<!-- Import de la feuille de style principale -->
+        <title>FaireFrance</title>
+        <meta name="description" content="Là où le consommateur devient consomm'acteur !" />			<!-- Information destinée aux moteurs de recherche : description du site -->
+        <meta name="keywords" content="fairefrance, ff, lait, equitable, creme, crème, équitable" /> 			<!-- Information destinée aux moteurs de recherche : mot-clefs du site -->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>			<!-- Import de la bibliothèque jQuery depuis un CDN -->
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>		<!-- Import de la bibliothèque jQuery Mobile depuis un CDN -->
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="pageone">			<!-- Spécificités jQuery Mobile : bloc délimitant la première page -->
+            <div data-role="header">				<!-- Spécificités jQuery Mobile : bannière du site -->
+                <div id="intro">
+                    <h1>FaireFrance</h1>
+                    <h2>Bonjour ! Bienvenue sur votre site<br /> « le lait équitable & connecté » !</h2>
+                </div>
+                <img src="header_ff.png" alt="FaireFrance" />
+            </div>
+            <div data-role="main" class="ui-content">   <!-- Spécificités jQuery Mobile : contenu de la page -->
+                <p>Avant tout, un message à faire passer</p>
+                <div id="cta">
+                    <p>
+                        Pionnier du Lait Equitable, FaireFrance est une marque qui appartient aux éleveurs et les préserve en leur assurant une rémunération équitable de 0.45€/L.<br />
+						Connectez-vous avec les éleveurs ! 
+                    </p>
+                    <a href="https://johnao.typeform.com/to/NC36Nu">Je donne mon avis !</a>
+                </div>
+                <p>Que souhaitez-vous découvrir ensuite ?</p>
+                <ul>
+                    <li>
+                        <a href="#pagetwo" data-transition="slidefade">
+                            <div class="el">
+                                Votre marque<br />
+                                <span class="description">Quels héros se cachent derrière cette brique ?</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pagethree" data-transition="slidefade" class="middle">
+                            <div class="el">
+                                Votre jeu<br />
+                                <span class="description">Spécialement concocté pour faire sourire petits et grands !</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pagefour" data-transition="slidefade">
+                            <div class="el">
+                                Vos recettes<br />
+                                <span class="description">Pour cuisiner équitable avec FaireFrance !</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="page" id="pagetwo">
+            <div data-role="header">
+                <div id="intro">
+                    <h1>Votre marque</h1>
+                    <h2>Qu'y a-t-il à savoir sur votre fournisseur<br /> de lait préféré ?</h2>
+                </div>
+                <img src="header_ff.png" alt="FaireFrance" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#pageone" data-transition="slidefade" data-direction="reverse">Accueil</a></li>
+                    <li><a href="#pagetwo" data-transition="slidefade" class="button_on">Votre marque</a></li>
+                    <li><a href="#pagethree" data-transition="slidefade">Votre jeu</a></li>
+                    <li><a href="#pagefour" data-transition="slidefade">Vos recettes</a></li>
+                    <li><a href="https://johnao.typeform.com/to/NC36Nu" data-transition="slidefade">L'enquête</a></li>
+                </ul>
+            </nav>
+            <div data-role="main" class="ui-content">   <!-- Spécificités jQuery Mobile : contenu de la page -->
+            	<!-- <iframe width="350" height="285" src="https://www.youtube.com/embed/2TqmZidgCp0?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> -->
+                    <p>Justine sauve les éleveurs et leur famille pour qu'ils continuent dignement le métier qu'ils aiment.</p>
+                    <img src="photo1.png" alt="Première photo" />
+                    <h4>Les 4 engagements de FaireFrance</h4>
+                    <p>1. Sur chaque brique, 0.45€ reviennent aux éleveurs. C'est la brique qui rapporte le plus de valeur aux éleveurs !</p>
+                    <img src="photo2.png" alt="Deuxième photo" />
+                    <p>2. La marque appartient entièrement aux éleveurs. C'est la seule !</p>
+                    <img src="photo3.png" alt="Troisième photo" />
+                    <p>3. Les éleveurs sont présents sur tout le territoire. À chaque brique achetée, on soutient un éleveur  près de chez nous et sa famille !</p>
+                    <img src="photo4.png" alt="Quatrième photo" />
+                    <p>4. FaireFrance est le pionnier du lait équitable !</p>
+                    <img src="photo5.png" alt="Cinquième photo" />
+                    <p>
+                    Vous souhaitez en savoir plus ?<br />
+                    Visitez le site de FaireFrance ici :<br />
+                    <a href="http://fairefrance.fr" alt="Site de FaireFrance">fairefrance.fr</a>
+                </p>
+            </div>
+        </div>
+        <div data-role="page" id="pagethree">
+            <div data-role="header">
+                <div id="intro">
+                    <h1>Votre jeu</h1>
+                    <h2>
+                        À consommer sans modération !
+                    </h2>
+                </div>
+                <img src="header_ff.png" alt="FaireFrance" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#pageone" data-transition="slidefade" data-direction="reverse">Accueil</a></li>
+                    <li><a href="#pagetwo" data-transition="slidefade" data-direction="reverse">Votre marque</a></li>
+                    <li><a href="#pagethree" data-transition="slidefade" class="button_on">Votre jeu</a></li>
+                    <li><a href="#pagefour" data-transition="slidefade">Vos recettes</a></li>
+                    <li><a href="https://johnao.typeform.com/to/NC36Nu" data-transition="slidefade">L'enquête</a></li>
+                </ul>
+            </nav>
+            <div data-role="main" class="ui-content">   <!-- Spécificités jQuery Mobile : contenu de la page -->
+                <p>FaireFrance vous propose de découvrir une grande variété de jeux !</p>
+                <h1>Le Labyrinthe de Justine</h1>
+                <h2>Aidez Justine à retrouver sa brique de lait FaireFrance !</h2>
+                <p>
+                    Vous souhaitez voir la solution ? Cliquez dessus !
+                </p>
+                <p>
+                    <a href="#"><img src="labyrinthe.jpg" alt="Labyrinthe"/></a>
+                </p>
+                <div class="solution_bg">
+                    <div class="solution">
+                        <img src="labyrinthe_solution.jpg" alt="Labyrinthe : solution" />
+                    </div>
+                </div>
+                <h1>Le Jeu des 7 erreurs</h1>
+                <h2>Quelles sont les sept différences entre ces deux images ?</h2>
+                <p>
+                    Vous souhaitez voir la solution ? Cliquez dessus !
+                </p>
+                <p>
+                    <a href="#"><img src="les_7_erreurs.jpg" alt="Les 7 erreurs"/></a>
+                </p>
+                <div class="solution_bg">
+                    <div class="solution">
+                        <img src="les_7_erreurs_solution.jpg" alt="Les 7 erreurs : solution" />
+                    </div>
+                </div>
+                <h1>Où est Justine ?</h1>
+                <h2>Mais où s'est-elle cachée ?</h2>
+                <p>
+                    Vous souhaitez voir la solution ? Cliquez dessus !
+                </p>
+                <p>
+                    <a href="#"><img src="ou_est_justine.jpg" alt="Où est Justine ?"/></a>
+                </p>
+                <div class="solution_bg">
+                    <div class="solution">
+                        <img src="ou_est_justine_solution.jpg" alt="Où est Justine ? : solution" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="pagefour">
+            <div data-role="header">
+                <div id="intro">
+                    <h1>Vos recettes</h1>
+                    <h2>
+                        Découvrez des recettes originales avec FaireFrance !<br />
+                    </h2>
+                </div>
+                <img src="header_ff.png" alt="FaireFrance" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#pageone" data-transition="slidefade" data-direction="reverse">Accueil</a></li>
+                    <li><a href="#pagetwo" data-transition="slidefade" data-direction="reverse">Votre marque</a></li>
+                    <li><a href="#pagethree" data-transition="slidefade" data-direction="reverse">Votre jeu</a></li>
+                    <li><a href="#pagefour" data-transition="slidefade" class="button_on">Vos recettes</a></li>
+                    <li><a href="https://johnao.typeform.com/to/NC36Nu" data-transition="slidefade">L'enquête</a></li>
+                </ul>
+            </nav>
+            <div data-role="main" class="ui-content">   <!-- Spécificités jQuery Mobile : contenu de la page -->
+
+
+                <p>Pour cette première recette, nous vous invitons à découvrir le Milkshake<br />made in FaireFrance.</p>
+                <h1>Le milkshake </h1>
+                <img src="milkshake_bleu.png" alt="titre_milkshake"/>
+                <h2>Ingrédients pour une personne</h2>
+                <ul>
+                    <li>10 glaçons</li>
+                    <li>1/2 L de lait FaireFrance</li>
+                    <li>24 fraises</li>
+                    <li>20g de sucre</li>
+                </ul>
+                <h2>Instructions</h2>
+                <p>
+                    Lavez les fraises dans l'eau.<br />
+                    Versez dans votre blender le lait FaireFrance, les glaçons et les fraises.<br />
+                    Mixez le tout jusqu'à avoir une crème onctueuse.
+                </p>
+                <p>-----------</p>
+                <p>
+                    Dans cette seconde recette, préparez un yaourt original avec FaireFrance.
+                </p>
+                <h1>Le yaourt </h1>
+                <img src="yaourt_vert.png" alt="titre yaourt" />
+                <h2>Ingrédients pour une personne</h2>
+                <ul>
+                    <li>1 yaourt du commerce</li>
+                    <li>1 L de lait FaireFrance</li>
+                </ul>
+                <h2>Instructions</h2>
+                <p>
+                    Dans un saladier, mélanger le litre de lait FaireFrance avec le yaourt.<br />
+                    Sucrer si nécessaire.<br />
+                    Verser la préparation dans 8 pots et les placer dans la yaourtière pendant 12h.
+                </p>
+                <p>-----------</p>
+                <h1>Le chocolat chaud </h1>
+                <img src="chocolat_chaud_marron.png" src="titre chocolat chaud" />
+                <h2>Ingrédients pour une personne</h2>
+                <ul>
+                    <li>50g de chocolat noir </li>
+                    <li>25cl de lait FaireFrance</li>
+                    <li>1 cuillère à soupe de sucre</li>
+                    <li>1 cuillère à soupe de cacao</li>
+                </ul>
+                <h2>Instructions</h2>
+                <p>
+                    Faire fondre le chocolat avec deux cuillierés à soupe de lait au micro-onde (par intervalle de 30 secondes en remuant entre chaque passage).<br />
+                    Verser le reste de lait dans une casserole et y incorporer le mélange de chocolat et de lait.<br />
+                    Porter à ébullition tout en remuant.<br />
+                    Une fois le mélange homogène retirer du feu et y ajouter le sucre, mélanger et verser dans une tasse.<br />
+                    Saupoudrer de cacao si besoin.
+                </p>
+                <p>-----------</p>
+                <p>
+                    À venir, d'autres recettes pour affûter votre imagination en compagnie de Justine !
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
